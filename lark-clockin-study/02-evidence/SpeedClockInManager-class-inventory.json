@@ -1,0 +1,355 @@
+{
+  "evidence_id": "ev_6be979f5858f5aadfd2892728ca981a81d0471bf409ac02635937adc9597ef79",
+  "subject": {
+    "name": "lark.apk",
+    "digest": {
+      "sha256": "31585b7b637b19994b80d8fa1f6e4c5032bd80fe2be55584078a7b43aa94df99"
+    },
+    "format": "apk",
+    "architecture": null,
+    "local_path": "/home/opc/31/lark.apk"
+  },
+  "provider": {
+    "id": "jadx",
+    "name": "JADX headless",
+    "version": "0.7.1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_android_class",
+  "parameters": {
+    "path": "/home/opc/31/lark.apk",
+    "class_name": "com.ss.android.lark.appstrategy.clockin.SpeedClockInManager"
+  },
+  "raw_result": {
+    "server": {
+      "name": "rea-jadx-bridge",
+      "version": "1"
+    },
+    "bridge_sha256": "5a5a4e32264fbe597a329d7ad4b06a6266b7b31243e86b0263dbddcecaf351a1",
+    "jar_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+    "loaded": {
+      "state": "LOADED",
+      "apk_path": "/tmp/rea-android-6R3WGY/target.apk",
+      "class_count": 136068,
+      "resource_count": 22580,
+      "threads": 1,
+      "resources": "full"
+    },
+    "calls": [
+      {
+        "operation": "rea_jvm_status",
+        "input": {},
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"available_processors\":4,\"java_version\":\"21.0.12.1\",\"max_heap_bytes\":8589934592,\"metadata_scope\":\"parsed_members\",\"engine_reported_version\":\"0.7.1\"}"
+            }
+          ],
+          "isError": false
+        }
+      },
+      {
+        "operation": "load_apk",
+        "input": {
+          "path": "/tmp/rea-android-6R3WGY/target.apk",
+          "threads": 1,
+          "resources": "full"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"state\":\"LOADED\",\"apk_path\":\"/tmp/rea-android-6R3WGY/target.apk\",\"class_count\":136068,\"raw_class_count\":136068,\"resource_count\":22580,\"load_duration_ms\":94153,\"decompile_timeout_ms\":90000,\"threads\":1,\"code_cache_size\":64,\"resources\":\"full\"}"
+            }
+          ]
+        }
+      },
+      {
+        "operation": "get_class_summary",
+        "input": {
+          "class_name": "com.ss.android.lark.appstrategy.clockin.SpeedClockInManager"
+        },
+        "response": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"name\":\"SpeedClockInManager\",\"inner_classes\":[\"com.ss.android.lark.appstrategy.clockin.SpeedClockInManager.a\",\"com.ss.android.lark.appstrategy.clockin.SpeedClockInManager.b\",\"com.ss.android.lark.appstrategy.clockin.SpeedClockInManager.c\",\"com.ss.android.lark.appstrategy.clockin.SpeedClockInManager.d\",\"com.ss.android.lark.appstrategy.clockin.SpeedClockInManager.e\"],\"inner_class_count\":5,\"method_count\":28,\"methods\":[{\"signature\":\"\\u003cclinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cclinit\\u003e\",\"is_constructor\":false},{\"signature\":\"\\u003cinit\\u003e(): void\",\"def_pos\":0,\"name\":\"\\u003cinit\\u003e\",\"is_constructor\":true},{\"signature\":\"a(): kotlinx.coroutines.sync.a\",\"def_pos\":0,\"name\":\"a\",\"is_constructor\":false},{\"signature\":\"b(): com.ss.android.lark.appstrategy.clockin.state.SpeedClockInModel\",\"def_pos\":0,\"name\":\"b\",\"is_constructor\":false},{\"signature\":\"c(com.ss.android.lark.appstrategy.clockin.SpeedClockInManager, com.ss.android.lark.http.netstate.NetworkUtils$NetworkType): void\",\"def_pos\":0,\"name\":\"c\",\"is_constructor\":false},{\"signature\":\"d(com.ss.android.lark.appstrategy.clockin.SpeedClockInManager, byte[], java.lang.String, boolean, boolean): void\",\"def_pos\":0,\"name\":\"d\",\"is_constructor\":false},{\"signature\":\"e(boolean): void\",\"def_pos\":0,\"name\":\"e\",\"is_constructor\":false},{\"signature\":\"f(com.ss.android.lark.appstrategy.clockin.SpeedClockInManager, java.lang.String, java.lang.String, java.util.List, boolean, java.util.List, kotlin.coroutines.Continuation): java.lang.Object\",\"def_pos\":0,\"name\":\"f\",\"is_constructor\":false},{\"signature\":\"g(com.ss.android.lark.appstrategy.clockin.SpeedClockInManager, java.util.List, boolean, java.util.List): void\",\"def_pos\":0,\"name\":\"g\",\"is_constructor\":false},{\"signature\":\"getCoroutineContext(): kotlin.coroutines.CoroutineContext\",\"def_pos\":0,\"name\":\"getCoroutineContext\",\"is_constructor\":false},{\"signature\":\"h(): void\",\"def_pos\":0,\"name\":\"h\",\"is_constructor\":false},{\"signature\":\"i(): boolean\",\"def_pos\":0,\"name\":\"i\",\"is_constructor\":false},{\"signature\":\"j(): void\",\"def_pos\":0,\"name\":\"j\",\"is_constructor\":false},{\"signature\":\"k(): void\",\"def_pos\":0,\"name\":\"k\",\"is_constructor\":false},{\"signature\":\"l(): void\",\"def_pos\":0,\"name\":\"l\",\"is_constructor\":false},{\"signature\":\"m(boolean): void\",\"def_pos\":0,\"name\":\"m\",\"is_constructor\":false},{\"signature\":\"n(com.ss.android.lark.http.netstate.NetworkUtils$NetworkType): void\",\"def_pos\":0,\"name\":\"n\",\"is_constructor\":false},{\"signature\":\"o(byte[], java.lang.String, boolean, boolean): void\",\"def_pos\":0,\"name\":\"o\",\"is_constructor\":false},{\"signature\":\"p(): void\",\"def_pos\":0,\"name\":\"p\",\"is_constructor\":false},{\"signature\":\"q(): void\",\"def_pos\":0,\"name\":\"q\",\"is_constructor\":false},{\"signature\":\"r(java.lang.String, kotlin.jvm.functions.Function0\\u003ckotlin.Unit\\u003e): void\",\"def_pos\":0,\"name\":\"r\",\"is_constructor\":false},{\"signature\":\"s(com.ss.android.lark.appstrategy.clockin.SpeedClockInManager, java.lang.String, kotlin.jvm.functions.Function0, int, java.lang.Object): void\",\"def_pos\":0,\"name\":\"s\",\"is_constructor\":false},{\"signature\":\"t(java.lang.String, boolean, java.lang.String, java.util.List\\u003cjava.lang.Integer\\u003e, boolean, java.util.List\\u003cjava.lang.String\\u003e): void\",\"def_pos\":0,\"name\":\"t\",\"is_constructor\":false},{\"signature\":\"u(com.ss.android.lark.appstrategy.clockin.SpeedClockInManager, java.lang.String, boolean, java.lang.String, java.util.List, boolean, java.util.List, int, java.lang.Object): void\",\"def_pos\":0,\"name\":\"u\",\"is_constructor\":false},{\"signature\":\"v(java.util.List\\u003cjava.lang.Integer\\u003e, boolean, java.util.List\\u003cjava.lang.String\\u003e): void\",\"def_pos\":0,\"name\":\"v\",\"is_constructor\":false},{\"signature\":\"w(java.lang.String, java.lang.String, java.util.List\\u003cjava.lang.Integer\\u003e, boolean, java.util.List\\u003cjava.lang.String\\u003e, kotlin.coroutines.Continuation\\u003c? super kotlin.Unit\\u003e): java.lang.Object\",\"def_pos\":0,\"name\":\"w\",\"is_constructor\":false},{\"signature\":\"x(java.util.List\\u003cjava.lang.Integer\\u003e, boolean, java.util.List\\u003cjava.lang.String\\u003e): void\",\"def_pos\":0,\"name\":\"x\",\"is_constructor\":false},{\"signature\":\"y(): void\",\"def_pos\":0,\"name\":\"y\",\"is_constructor\":false}],\"fields\":[{\"type\":\"com.ss.android.lark.appstrategy.clockin.SpeedClockInManager\",\"name\":\"f167604b\",\"def_pos\":0},{\"type\":\"com.ss.android.lark.appstrategy.clockin.state.a\",\"name\":\"f167605c\",\"def_pos\":0},{\"type\":\"com.ss.android.lark.appstrategy.clockin.state.SpeedClockInModel\",\"name\":\"f167606d\",\"def_pos\":0},{\"type\":\"kotlinx.coroutines.sync.a\",\"name\":\"f167607e\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"f167608f\",\"def_pos\":0},{\"type\":\"com.ss.android.lark.http.netstate.a\",\"name\":\"f167609g\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"f167610h\",\"def_pos\":0},{\"type\":\"boolean\",\"name\":\"f167611i\",\"def_pos\":0},{\"type\":\"y83.a\",\"name\":\"f167612j\",\"def_pos\":0},{\"type\":\"kotlinx.coroutines.CoroutineScope\",\"name\":\"f167613a\",\"def_pos\":0}],\"field_count\":10,\"full_name\":\"com.ss.android.lark.appstrategy.clockin.SpeedClockInManager\"}"
+            }
+          ],
+          "isError": false
+        }
+      }
+    ]
+  },
+  "normalized_result": {
+    "engine": {
+      "name": "jadx-headless-mcp",
+      "version": "0.7.1",
+      "artifact_sha256": "6e5eacf500b64292bfb73c49797c1958f6ee44646e43e868039ae7feb573ff75",
+      "source_revision": "5844800a486d2248fa949b74c9896285f5b54de2",
+      "worker_count": 1,
+      "heap_limit_mib": 8192
+    },
+    "class_name": "com.ss.android.lark.appstrategy.clockin.SpeedClockInManager",
+    "methods": [
+      {
+        "name": "<clinit>",
+        "reported_signature": "<clinit>(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "<init>",
+        "reported_signature": "<init>(): void",
+        "overload_index": 0,
+        "is_constructor": true,
+        "dex_descriptor": null
+      },
+      {
+        "name": "a",
+        "reported_signature": "a(): kotlinx.coroutines.sync.a",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "b",
+        "reported_signature": "b(): com.ss.android.lark.appstrategy.clockin.state.SpeedClockInModel",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "c",
+        "reported_signature": "c(com.ss.android.lark.appstrategy.clockin.SpeedClockInManager, com.ss.android.lark.http.netstate.NetworkUtils$NetworkType): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "d",
+        "reported_signature": "d(com.ss.android.lark.appstrategy.clockin.SpeedClockInManager, byte[], java.lang.String, boolean, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "e",
+        "reported_signature": "e(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "f",
+        "reported_signature": "f(com.ss.android.lark.appstrategy.clockin.SpeedClockInManager, java.lang.String, java.lang.String, java.util.List, boolean, java.util.List, kotlin.coroutines.Continuation): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "g",
+        "reported_signature": "g(com.ss.android.lark.appstrategy.clockin.SpeedClockInManager, java.util.List, boolean, java.util.List): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "getCoroutineContext",
+        "reported_signature": "getCoroutineContext(): kotlin.coroutines.CoroutineContext",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "h",
+        "reported_signature": "h(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "i",
+        "reported_signature": "i(): boolean",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "j",
+        "reported_signature": "j(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "k",
+        "reported_signature": "k(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "l",
+        "reported_signature": "l(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "m",
+        "reported_signature": "m(boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "n",
+        "reported_signature": "n(com.ss.android.lark.http.netstate.NetworkUtils$NetworkType): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "o",
+        "reported_signature": "o(byte[], java.lang.String, boolean, boolean): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "p",
+        "reported_signature": "p(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "q",
+        "reported_signature": "q(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "r",
+        "reported_signature": "r(java.lang.String, kotlin.jvm.functions.Function0<kotlin.Unit>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "s",
+        "reported_signature": "s(com.ss.android.lark.appstrategy.clockin.SpeedClockInManager, java.lang.String, kotlin.jvm.functions.Function0, int, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "t",
+        "reported_signature": "t(java.lang.String, boolean, java.lang.String, java.util.List<java.lang.Integer>, boolean, java.util.List<java.lang.String>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "u",
+        "reported_signature": "u(com.ss.android.lark.appstrategy.clockin.SpeedClockInManager, java.lang.String, boolean, java.lang.String, java.util.List, boolean, java.util.List, int, java.lang.Object): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "v",
+        "reported_signature": "v(java.util.List<java.lang.Integer>, boolean, java.util.List<java.lang.String>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "w",
+        "reported_signature": "w(java.lang.String, java.lang.String, java.util.List<java.lang.Integer>, boolean, java.util.List<java.lang.String>, kotlin.coroutines.Continuation<? super kotlin.Unit>): java.lang.Object",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "x",
+        "reported_signature": "x(java.util.List<java.lang.Integer>, boolean, java.util.List<java.lang.String>): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      },
+      {
+        "name": "y",
+        "reported_signature": "y(): void",
+        "overload_index": 0,
+        "is_constructor": false,
+        "dex_descriptor": null
+      }
+    ],
+    "fields": [
+      {
+        "name": "f167604b",
+        "reported_type": "com.ss.android.lark.appstrategy.clockin.SpeedClockInManager"
+      },
+      {
+        "name": "f167605c",
+        "reported_type": "com.ss.android.lark.appstrategy.clockin.state.a"
+      },
+      {
+        "name": "f167606d",
+        "reported_type": "com.ss.android.lark.appstrategy.clockin.state.SpeedClockInModel"
+      },
+      {
+        "name": "f167607e",
+        "reported_type": "kotlinx.coroutines.sync.a"
+      },
+      {
+        "name": "f167608f",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f167609g",
+        "reported_type": "com.ss.android.lark.http.netstate.a"
+      },
+      {
+        "name": "f167610h",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f167611i",
+        "reported_type": "boolean"
+      },
+      {
+        "name": "f167612j",
+        "reported_type": "y83.a"
+      },
+      {
+        "name": "f167613a",
+        "reported_type": "kotlinx.coroutines.CoroutineScope"
+      }
+    ],
+    "inner_classes": [
+      "com.ss.android.lark.appstrategy.clockin.SpeedClockInManager.a",
+      "com.ss.android.lark.appstrategy.clockin.SpeedClockInManager.b",
+      "com.ss.android.lark.appstrategy.clockin.SpeedClockInManager.c",
+      "com.ss.android.lark.appstrategy.clockin.SpeedClockInManager.d",
+      "com.ss.android.lark.appstrategy.clockin.SpeedClockInManager.e"
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Static decompiler observations do not establish runtime behavior; the APK is never executed.",
+    "Method signatures use provider display types; exact DEX descriptors and instruction offsets are unavailable. Overload indices are local to this engine and artifact.",
+    "Class inventories use parsed metadata before code generation, including synthetic members that may be omitted from decompiled source. Source positions remain unknown.",
+    "Manifest summary fields are extracted by the upstream engine; decoded XML is retained for verification. APK signatures, split APKs, native libraries and Android runtime capture are not verified by this provider."
+  ],
+  "locations": [],
+  "evidence_links": []
+}
